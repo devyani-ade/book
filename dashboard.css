@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bookDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > #bookContent {
+    min-width: 70%;
+    text-align: center;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.book-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 20px; /* Space between books */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Maximum width of the gallery */
+    margin: auto; /* Centering the gallery */
+}
+
+.book {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.05); /* Slight zoom on hover for interactivity */
+}
+
+.book img {
+    width: 100%; /* Responsive image sizing */
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.book p {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+#bookContent{
+
+    min-width: 70%;
+    text-align: center;
+}
+
+#bookContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#bookContent h2 {
+    font-size: 28px;
+    color: #34495e;
+}
+
+#bookContent img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+#bookContent p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Enhance readability with optimal line length */
+#bookContent {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #bookContent {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    #bookContent h2 {
+        font-size: 24px;
+    }
+
+    #bookContent p {
+        font-size: 16px;
+    }
+}
